@@ -9,19 +9,14 @@ import Task from './Task.js';
 import AccountsUIWrapper from './AccountsUIWrapper.js';
 
 import {
-  Input,
-  Form,
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap';
+    Input,
+    Form,
+    Navbar,
+    NavbarBrand,
+    Nav,
+    NavItem,
+    Progress
+ } from 'reactstrap';
 
 
 // App component - represents the whole app
@@ -77,6 +72,8 @@ class App extends Component {
   }
 
   render() {
+    let completedRatio = 1-this.props.incompleteCount/this.props.totalCount;
+    let completedPercentage = (completedRatio*100).toFixed(2);
     return (
         <>
           {/*<DemoNavbar />*/}
@@ -95,8 +92,12 @@ class App extends Component {
             {this.props.currentUser ?
                 <div className="container-fluid shadow-box">
                   <header>
-                    <h2 className='text-center'>Todo List ({this.props.incompleteCount})</h2>
+                    <h2 className='text-center'>Todo List ({this.props.incompleteCount}/{this.props.totalCount})</h2>
                   </header>
+                  <div>
+                    <div className="text-center">{completedPercentage}%</div>
+                    <Progress value={completedPercentage} />
+                  </div>
                   <br/>
                   <Form className='text-center' onSubmit={this.handleSubmit.bind(this)}>
                     <Input
@@ -117,7 +118,7 @@ class App extends Component {
                       Hide Completed Tasks
                     </p>
                     <div className='shadow-box-neat'>
-                      <ul>
+                      <ul id='todo-list'>
                         {this.renderTasks()}
                       </ul>
                     </div>
@@ -179,6 +180,7 @@ export default withTracker(() => {
   return {
     tasks: Tasks.find({}, { sort: { createdAt: -1 } }).fetch(),
     incompleteCount: Tasks.find({ checked: { $ne: true } }).count(),
+    totalCount: Tasks.find({}).count(),
     currentUser: Meteor.user(),
   };
 })(App);

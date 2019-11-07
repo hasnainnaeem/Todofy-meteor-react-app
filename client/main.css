@@ -32,8 +32,7 @@ span#login-buttons {
 }
 
 .shadow-box-neat {
-  box-shadow: black 0 0 2px;
-  padding: 5% 5%;
+  box-shadow: black 0 0 3px;
   margin: 0 auto;
   min-height: 100%;
   background: white;
@@ -153,6 +152,17 @@ input {
   color: black !important;
 }
 
+#todo-list .private.private {
+  background-color: rgba(0,123,255,0.81) !important;
+  color: white;
+  padding: 2% 5% !important;
+}
+
+#todo-list li {
+  background-color: #666666 !important;
+  color: white;
+  padding: 2% 5% !important;
+}
 
 /* For scroll bar */
 body::-webkit-scrollbar {
