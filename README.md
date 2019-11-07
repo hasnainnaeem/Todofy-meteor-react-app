@@ -12,10 +12,10 @@ See if some instruction is relevant to state of your PC.
 
 ## Screenshots
 ### Home Page
-![alt text](https://github.com/hasnainnaeem/todo-app-meteor-react/tree/master/_screenshots/home-page.png "Todofy - Home Page")
+![Todofy - Home Page](https://github.com/hasnainnaeem/todo-app-meteor-react/tree/master/_screenshots/home-page.png)
 ### Sign Up Dialog
-![alt text](https://github.com/hasnainnaeem/todo-app-meteor-react/tree/master/_screenshots/sign-up-box.png "Sign Up Dialog")
+![Sign Up Dialog](https://github.com/hasnainnaeem/todo-app-meteor-react/tree/master/_screenshots/sign-up-box.PNG)
 ### Sign in Dialog
-![alt text](https://github.com/hasnainnaeem/todo-app-meteor-react/tree/master/_screenshots/sign-in-box.png "Login Dialog")
+![Login Dialog](https://github.com/hasnainnaeem/todo-app-meteor-react/tree/master/_screenshots/sign-in-box.PNG)
 ### User Panel/Todo Manager
-![alt text](https://github.com/hasnainnaeem/todo-app-meteor-react/tree/master/_screenshots/user-panel.png "User Panel/Todo Manager")
+![User Panel/Todo Manager](https://github.com/hasnainnaeem/todo-app-meteor-react/tree/master/_screenshots/user-panel.png)
