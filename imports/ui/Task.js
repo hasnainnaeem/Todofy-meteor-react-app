@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Meteor } from 'meteor/meteor';
 import classnames from 'classnames';
+import { Button, Input } from 'reactstrap';
 
 import { Tasks } from '../api/tasks.js';
 
@@ -29,11 +30,11 @@ export default class Task extends Component {
 
         return (
             <li className={taskClassName}>
-                <button className="delete" onClick={this.deleteThisTask.bind(this)}>
+                <Button className="delete" outline color="warning" onClick={this.deleteThisTask.bind(this)}>
                     &times;
-                </button>
+                </Button>{' '}
 
-                <input
+                <Input
                     type="checkbox"
                     readOnly
                     checked={!!this.props.task.checked}
@@ -41,9 +42,9 @@ export default class Task extends Component {
                 />
 
                 { this.props.showPrivateButton ? (
-                    <button className="toggle-private" onClick={this.togglePrivate.bind(this)}>
+                    <Button className="toggle-private" onClick={this.togglePrivate.bind(this)} color="primary" size="sm">
                         { this.props.task.private ? 'Private' : 'Public' }
-                    </button>
+                    </Button>
                 ) : ''}
 
                 <span className="text">

@@ -1,34 +1,59 @@
 /* CSS declarations go here */
-body {
-  font-family: sans-serif;
-  background-color: #315481;
-  background-image: linear-gradient(to bottom, #315481, #918e82 100%);
-  background-attachment: fixed;
- 
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
- 
-  padding: 0;
-  margin: 0;
- 
-  font-size: 14px;
+.main-section-container {
+  /*background-color: #323232;*/
+  padding: 2%;
 }
- 
-.container {
-  max-width: 600px;
+
+.dark-nav, .dark-nav .nav-item, .dark-nav ul, .dark-nav li, .dark-nav span {
+  background-color: #3b55e6 !important;
+  color: white !important;
+}
+
+
+li.nav-item{
+  border-bottom: 0 !important;
+}
+
+.dark-nav>a {
+  background: #3b55e6;
+  color: white !important;
+}
+
+span#login-buttons {
+  background: #3b55e6 !important;
+}
+
+.shadow-box {
+  box-shadow: black 0 0 10px;
+  padding: 5% 5%;
   margin: 0 auto;
   min-height: 100%;
   background: white;
 }
- 
-header {
-  background: #d2edf4;
-  background-image: linear-gradient(to bottom, #d0edf5, #e1e5f0 100%);
-  padding: 20px 15px 15px 15px;
+
+.shadow-box-neat {
+  box-shadow: black 0 0 2px;
+  padding: 5% 5%;
+  margin: 0 auto;
+  min-height: 100%;
+  background: white;
+}
+
+.header {
+  color: white;
+  -webkit-box-shadow: rgba(9, 132, 227,1.0) 1px 1px 5px;
+  -moz-box-shadow: rgba(9, 132, 227,1.0) 1px 1px 5px;
+  box-shadow: rgba(9, 132, 227,1.0) 1px 1px 5px;
+  overflow: auto;
+  background: linear-gradient(rgba(9, 132, 227,1.0), rgba(255, 118, 117,1.0));
+  background-size: cover;
   position: relative;
+  padding: 1%;
+}
+
+#login-header {
+  margin-top: 0;
+  padding: 5% 10%;
 }
  
 #login-buttons {
@@ -36,7 +61,6 @@ header {
 }
  
 h1 {
-  font-size: 1.5em;
   margin: 0;
   margin-bottom: 10px;
   display: inline-block;
@@ -114,7 +138,7 @@ header .hide-completed {
   li {
     padding: 12px 15px;
   }
- 
+
   .search {
     width: 150px;
     clear: both;
@@ -123,4 +147,32 @@ header .hide-completed {
   .new-task input {
     padding-bottom: 5px;
   }
+}
+
+input {
+  color: black !important;
+}
+
+
+/* For scroll bar */
+body::-webkit-scrollbar {
+  width: .8em;
+  border-radius: 1000px;
+}
+
+
+body::-webkit-scrollbar-track {
+  border: 2px solid #3b55e6;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #3b55e6;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #3b55e6;
+}
+
+body::-webkit-scrollbar-thumb:active {
+  background-color: white;
 }
