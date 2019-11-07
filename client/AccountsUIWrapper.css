@@ -24,9 +24,9 @@ a.login-close-text {
 }
 
 a.login-close-text:hover {
-    background-color: white !important;
-    color: #3b55e6 !important;
-    transition: background .3s ease-in, color .7s ease-in;
+    background-color: #3b55e6 !important;
+    color: white !important;
+    transition: background 200ms ease-in, color 200ms ease-in;
 }
 
 div.login-button, button.login-button {
@@ -39,7 +39,7 @@ div.login-button:hover, button.login-button:hover {
     background: white !important;
     color: #3b55e6 !important;
     font-weight: bold;
-    transition: background 300ms ease-in, color 300ms ease-in;
+    transition: background 200ms ease-in, color 200ms ease-in;
 }
 
 input {

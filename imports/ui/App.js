@@ -15,7 +15,8 @@ import {
     NavbarBrand,
     Nav,
     NavItem,
-    Progress
+    Progress,
+    Alert
  } from 'reactstrap';
 
 
@@ -98,6 +99,23 @@ class App extends Component {
                     <div className="text-center">{completedPercentage}%</div>
                     <Progress value={completedPercentage} />
                   </div>
+                    {
+                        completedRatio==1?
+                            <div>
+                                <br />
+                                <Alert color="success">
+                                    <h4 className="alert-heading">Well done!</h4>
+                                    <p>
+                                        You've completed all the tasks.
+                                    </p>
+                                    <hr />
+                                    <p className="mb-0">
+                                        You deserve a cupcake. Go have one.                                    </p>
+                                </Alert>
+                            </div>
+                            :
+                            ""
+                    }
                   <br/>
                   <Form className='text-center' onSubmit={this.handleSubmit.bind(this)}>
                     <Input
