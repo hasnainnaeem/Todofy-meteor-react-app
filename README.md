@@ -14,8 +14,8 @@ See if some instruction is relevant to state of your PC.
 ### Home Page
 ![Todofy - Home Page](_screenshots/home-page.png)
 ### Sign Up Dialog
-![Sign Up Dialog](https://https://github.com/hasnainnaeem/todo-app-meteor-react/tree/master/_screenshots/sign-up-box.PNG)
+![Sign Up Dialog](_screenshots/sign-up-box.PNG)
 ### Sign in Dialog
-![Login Dialog](https://https://github.com/hasnainnaeem/todo-app-meteor-react/tree/master/_screenshots/sign-in-box.PNG)
+![Login Dialog](_screenshots/sign-in-box.PNG)
 ### User Panel/Todo Manager
-![User Panel/Todo Manager](https://https://github.com/hasnainnaeem/todo-app-meteor-react/tree/master/_screenshots/user-panel.png)
+![User Panel/Todo Manager](_screenshots/user-panel.png)
