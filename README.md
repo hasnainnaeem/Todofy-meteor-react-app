@@ -1,6 +1,5 @@
-# todo-app-meteor-react
-Replicating the Todo App provided on Meteor.js website and adding more features to it for learning purposes. 
-(https://www.meteor.com/tutorials/react/creating-an-app)
+# Todofy - A Meteor & React App
+This project is extension of Todo app provided in [official tutorial of Meteor.js](https://www.meteor.com/tutorials/react/creating-an-app). Additional features include homepage, totally redesigned UI, progress bar & progress count, and some other features.
 
 ## Get Started
 * Download chocolatey by following instructions on this page: https://chocolatey.org/install
@@ -10,3 +9,13 @@ Replicating the Todo App provided on Meteor.js website and adding more features 
 * Run command `meteor` to start the app.
 * It should work. If it doesn't, go through the instructions on this page: https://www.meteor.com/tutorials/react/creating-an-app
 See if some instruction is relevant to state of your PC.
+
+## Screenshots
+### Home Page
+![Todofy - Home Page](_screenshots/home-page.png)
+### Sign Up Dialog
+![Sign Up Dialog](_screenshots/sign-up-box.png)
+### Sign in Dialog
+![Login Dialog](_screenshots/sign-in-box.PNG)
+### User Panel/Todo Manager
+![User Panel/Todo Manager](_screenshots/user-panel.png)
