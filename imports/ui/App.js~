@@ -166,7 +166,9 @@ class App extends Component {
 			onClick={this.addButtonClicked.bind(this)} color="primary" size="sm">
 				New Task
                     </Button>
-    		 	</p>
+    		 
+
+			</p>
 		}
                   <br/>
                   <div>
