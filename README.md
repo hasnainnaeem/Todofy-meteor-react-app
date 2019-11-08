@@ -7,8 +7,8 @@ This project is extension of Todo app provided in [official tutorial of Meteor.j
 * Clone/download this repository
 * Move to directory of project and run this command to install the packages `meteor npm install`
 * Run command `meteor` to start the app.
-* It should work. If it doesn't, go through the instructions on this page: https://www.meteor.com/tutorials/react/creating-an-app
-See if some instruction is relevant to state of your PC.
+* It should work. This app is based on the official Meteor.js tutorial. So, if it doesn't work, go through the instructions on this page (start from react part of 2nd page named `components`): https://www.meteor.com/tutorials/react/creating-an-app
+Look for the instructions relevant to state of your PC and execute those. 
 
 ## Screenshots
 ### Home Page
