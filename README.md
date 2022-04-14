@@ -1,5 +1,5 @@
 # Todofy - A Meteor & React App
-This project is extension of Todo app provided in [official tutorial of Meteor.js](https://www.meteor.com/tutorials/react/creating-an-app). Additional features include homepage, totally redesigned UI, progress bar & progress count, and some other features.
+An elegant, reponsive, and simple yet powerful app supporting synchronization of todos across the team. 
 
 ## Get Started
 * Download chocolatey by following instructions on this page: https://chocolatey.org/install
